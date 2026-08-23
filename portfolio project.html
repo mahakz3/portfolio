@@ -2,6 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maha's Portfolio</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -467,9 +468,9 @@
 				for (var i = 0; i < reveals.length; i++) {
 					var windowHeight = window.innerHeight;
 					var elementTop = reveals[i].getBoundingClientRect().top;
-					var elementVisible = 100; // المسافة بالبكسل قبل إظهار العنصر
+					var elementVisible = 100; 
 
-					// إضافة كلاس الإخفاء المبدئي
+					    
 					reveals[i].classList.add("reveal");
 
 					if (elementTop < windowHeight - elementVisible) {
@@ -478,7 +479,7 @@
 				}
 			}
 
-			// تشغيل الدالة عند التمرير وعند تحميل الصفحة
+			
 			window.addEventListener("scroll", revealOnScroll);
 			window.addEventListener("load", revealOnScroll);
 		</script>	
