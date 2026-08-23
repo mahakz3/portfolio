@@ -20,7 +20,7 @@ body {
 	font-family: "Fraunces", serif;
 	font-weight:none;
     font-style: normal;
-	margin-top:200px;
+	margin-top:100px;
 	margin-right:0px;
 	overflow-x:hidden;
 	width:100%;
@@ -45,7 +45,7 @@ p {
 
 .intro {
 	
-	margin:0 25px 30px 25px ;
+	margin:50px 25px 30px 25px ;
 	
 }
 
@@ -83,15 +83,20 @@ h1 {
 	margin:15px 0 25px 0;
 }
 
+
+#about-me-sec, #skills-sec, #certifications, #projects, #contact {
+    scroll-margin-top: 140px;
+}
+
+
 nav {
 	display:flex;
 	justify-content:space-around;
-	margin:34px 0 100px 0;
+	margin:34px 0 0 0;
 	border-top:1px solid #f7c8d3;
 	border-bottom:1px solid #f7c8d3;
 	padding:20px 0;
 	font-size:15px;
-	position:fixed;
 	top:0;
 	left:0;
 	width:100%;
@@ -196,7 +201,7 @@ button:hover {
 	position:relative;
 }
 
-.stat-box:not(:last-child)::after {   
+.stat-box:not(:last-child)::after {  
 	content:"";
 	position:absolute;
 	right:0;
@@ -354,10 +359,10 @@ button:hover {
 	background-color:white;
 	border-top:1px solid #F7C8D3;
 	border-bottom:1px solid #F7C8D3;
-	width:100vw;
+	width:100%;
 	position:relative;
 	overflow:hidden;
-	margin:10px 0;
+	margin:10px 0 75px 0;
 	padding:20px;
 	color:#C0C0C0;
 	font-family:'Plus Jakarta Sans',Sans;
@@ -418,6 +423,7 @@ button:hover {
 	width:100%;
 	background-color:#FFF7E6;
 	border-top:1px solid #F7C8D3;
+	margin-bottom:100px;
 }
 	
 
@@ -428,7 +434,7 @@ button:hover {
 	font-weight:600;
 	font-size:30px;
 	font-family:'Fraunces',Sans;
-	margin:30px;
+	margin:0px 0 60px 30px;
 	text-shadow:0 0 7px #b97d7b;
 }
 
@@ -448,7 +454,7 @@ button:hover {
 	border-radius:10px;
 	margin:0;
 	padding:15px;
-	width:450px;
+	width:100%;
 	font-family:'Plus Jakarta Sans',Sans;
 }
 
@@ -546,13 +552,6 @@ button:hover {
 
 
 
-	
-
-
-
-
-
-
 .skills-card.data-card .skill-level{
 	background-color:#e8f1f5;
 	color:#A9B7C6;
@@ -586,7 +585,7 @@ button:hover {
 .skills-card:nth-child(3) {
 	grid-column:span 2;
 	justify-self:center;
-	width:420px;
+	grid-column: 1 / -1;
 	
 }
 
@@ -596,7 +595,7 @@ button:hover {
 
 .cert-section {
 	border-top:1px solid #F7C8D3;
-	width:100vw;
+	width:100%;
 	background-image:radial-gradient(circle at center,#b46a7280,#FFF7E6,#FFF7E6);
 	margin-bottom:60px;
 }
@@ -748,7 +747,7 @@ button:hover {
 .cert-container:nth-child(5) {
 	grid-column:span 2;
 	justify-self:center;
-	width:420px;
+	grid-column: 1 / -1;
 	
 }
 
@@ -948,6 +947,7 @@ html, body {
     height: auto;
     overflow-x: hidden; 
     overflow-y: auto; 
+}
 
 
 .main-container {
