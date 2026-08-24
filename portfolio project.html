@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="pc.css">
 </head>
 <body>
-	<header>
+	<header class="header-nav">
 		<h1>Maha Khalid Alzahrani</h1>
 		<p class="p1">BIS Student</p>
 		<nav>
@@ -461,7 +461,7 @@
 		<script>
 			function revealOnScroll() {
 				
-				var reveals = document.querySelectorAll("section, .intro, .values, .skills-container, .cert-container, .project-container");
+				var reveals = document.querySelectorAll(".header-nav, section, .intro, .values, .skills-container, .cert-container, .project-container");
 
 				for (var i = 0; i < reveals.length; i++) {
 					var windowHeight = window.innerHeight;
