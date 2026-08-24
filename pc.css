@@ -149,19 +149,14 @@ nav a {
 	border-radius:40px;
 	text-align:center;
 	transition:all 0.5s;
+}
+
+.btn1 a {
+	text-decoration:none;
 	color:white;
 }
-
-.btn2 {
-	border:1px solid #f7c8d3;
-	padding:15px 30px;
-	background-color:#fff7e6;
-	border-radius:40px;
-	text-align:center;
-	transition:all 0.5s ;
-	margin-left:20px;
-}
-
+	
+	
 .img1 {
 	width:20px;
 	margin-left:10px;
