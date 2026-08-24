@@ -153,15 +153,11 @@ nav a {
 	color:white;
 }
 
-.btn2 {
-	border:1px solid #f7c8d3;
-	padding:15px 30px;
-	background-color:#fff7e6;
-	border-radius:40px;
-	text-align:center;
-	transition:all 0.5s ;
-	margin-left:20px;
+.btn1 a{
+	text-decoration:none;
 }
+
+
 
 .img1 {
 	width:20px;
@@ -203,7 +199,7 @@ button:hover {
 	position:relative;
 }
 
-.stat-box:not(:last-child)::after {   /*يعني طبقذا الكلام على كل المربعات معدا المرع الاخير */
+.stat-box:not(:last-child)::after {  
 	content:"";
 	position:absolute;
 	right:0;
