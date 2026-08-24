@@ -31,7 +31,7 @@
 		<p class="aboutMe">Business Information System student that has a passion for business analysis, data analysis, web development, and data visualization using Power Bi.
 		Passionate about learning more </p>
 		
-		<button class="btn1">Get in touch</button>
+		<button class="btn1"><a href="#contact">Get in touch</a></button>
 		
 		
 		
@@ -448,7 +448,7 @@
 					var elementTop = reveals[i].getBoundingClientRect().top;
 					var elementVisible = 100; 
 
-		
+			 
 					reveals[i].classList.add("reveal");
 
 					if (elementTop < windowHeight - elementVisible) {
@@ -457,7 +457,7 @@
 				}
 			}
 
-			// تشغيل الدالة عند التمرير وعند تحميل الصفحة
+ 
 			window.addEventListener("scroll", revealOnScroll);
 			window.addEventListener("load", revealOnScroll);
 		</script>	
