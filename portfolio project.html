@@ -10,19 +10,19 @@
 	<link rel="stylesheet" href="pc.css">
 </head>
 <body>
-	<div class="header-nav">
-		<header class="header-nav">
-			<h1>Maha Khalid Alzahrani</h1>
-			<p class="p1">BIS Student</p>
-			<nav>
-					<a href="#about-me-sec">About</a>
-					<a href="#skills-sec">Skills</a>
-					<a href="#certifications">Certifications</a>
-					<a href="#projects">Projects</a>
-					<a href="#contact">Contact</a>
-					
-			</nav>
-		</header>
+	<div class="header-sec">
+	<header class="header-nav">
+		<h1>Maha Khalid Alzahrani</h1>
+		<p class="p1">BIS Student</p>
+		<nav>
+				<a href="#about-me-sec">About</a>
+				<a href="#skills-sec">Skills</a>
+				<a href="#certifications">Certifications</a>
+				<a href="#projects">Projects</a>
+				<a href="#contact">Contact</a>
+				
+		</nav>
+	</header>
 	</div>
 	
     <div class="intro">
@@ -31,9 +31,7 @@
 		<p class="aboutMe">Business Information System student that has a passion for business analysis, data analysis, web development, and data visualization using Power Bi.
 		Passionate about learning more </p>
 		
-		<button class="btn1"> <a href="#contact">Get in touch</a></button>
-		
-	
+		<button class="btn1">Get in touch</button>
 		
 		
 		
@@ -176,12 +174,11 @@
 				
 			</div>
 		</div>
-		</div>
-		</section>
+	</div>
+</section>
 		
 		
-		<section id="skills-sec">
-		<section class="skills-section">
+		<section id="skills-sec" class="skills-section">
 		<div class="skills-header">
 			<h2>
 			<span>Skills & Expertise</span>
@@ -232,10 +229,7 @@
 					
 					
 				</div>
-					
-			
-			
-				</div>	
+			</div>	
 				
 				
 				
@@ -256,22 +250,13 @@
 				</div>
 					
 			
-				</div>			
+			</div>			
 		</div>	
-		</section>
+	</section>
 			
 			
 			
-			
-			
-			
-			
-			
-			
-		</section>
-			
-		<section id="certifications">	
-		<section class="cert-section">
+		<section id="certifications" class="cert-section">
 			<div class="cert-header">
 				<h2>
 					<span>Certifications</span>
@@ -373,13 +358,11 @@
 				</div>
 			</div>
 		</div>
-		</section>
-		</section>
+	</section>
 		
 		
 		
-		<section id="projects">
-		<section class="project-sec">
+		<section id="projects" class="project-sec">
 			<div class="cert-header">
 				<h2>Projects</h2>
 			</div>
@@ -433,8 +416,7 @@
 		
 			
 		
-		<section id="contact">
-		<section class="contact-sec">
+		<section id="contact" class="contact-sec">
 			<div class="cert-header">
 			<h2>Contact</h2>
 			</div>
@@ -454,23 +436,19 @@
 				</div>
 			</div>
 		</div>
-		
-		
-		
-		
-		</section>
+	</section>
 			
 		<script>
 			function revealOnScroll() {
 				
-				var reveals = document.querySelectorAll("body, section, .intro, .values, .skills-container, .cert-container, .project-container");
+				var reveals = document.querySelectorAll(" section, .intro, .values, .skills-container, .cert-container, .project-container");
 
 				for (var i = 0; i < reveals.length; i++) {
 					var windowHeight = window.innerHeight;
 					var elementTop = reveals[i].getBoundingClientRect().top;
 					var elementVisible = 100; 
 
-					    
+		
 					reveals[i].classList.add("reveal");
 
 					if (elementTop < windowHeight - elementVisible) {
@@ -479,7 +457,7 @@
 				}
 			}
 
-			
+			// تشغيل الدالة عند التمرير وعند تحميل الصفحة
 			window.addEventListener("scroll", revealOnScroll);
 			window.addEventListener("load", revealOnScroll);
 		</script>	
